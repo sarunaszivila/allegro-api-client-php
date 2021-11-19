@@ -162,7 +162,7 @@ class CheckoutFormDiscount implements ModelInterface, ArrayAccess
     const TYPE_BUNDLE = 'BUNDLE';
     const TYPE_MULTIPACK = 'MULTIPACK';
     const TYPE_CROSSMULTIPACK = 'CROSSMULTIPACK';
-    
+    const TYPE_ALLEGRO_PRICES = 'ALLEGRO_PRICES';
 
     
     /**
@@ -177,6 +177,7 @@ class CheckoutFormDiscount implements ModelInterface, ArrayAccess
             self::TYPE_BUNDLE,
             self::TYPE_MULTIPACK,
             self::TYPE_CROSSMULTIPACK,
+            self::TYPE_ALLEGRO_PRICES,
         ];
     }
     
