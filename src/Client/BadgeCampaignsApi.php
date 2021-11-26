@@ -441,11 +441,11 @@ class BadgeCampaignsApi
 
         if ($multipart) {
             $headers = $this->headerSelector->selectHeadersForMultipart(
-                ['application/vnd.allegro.beta.v1+json']
+                ['application/vnd.allegro.public.v1+json']
             );
         } else {
             $headers = $this->headerSelector->selectHeaders(
-                ['application/vnd.allegro.beta.v1+json'],
+                ['application/vnd.allegro.public.v1+json'],
                 []
             );
         }
@@ -778,11 +778,11 @@ class BadgeCampaignsApi
 
         if ($multipart) {
             $headers = $this->headerSelector->selectHeadersForMultipart(
-                ['application/vnd.allegro.beta.v1+json']
+                ['application/vnd.allegro.public.v1+json']
             );
         } else {
             $headers = $this->headerSelector->selectHeaders(
-                ['application/vnd.allegro.beta.v1+json'],
+                ['application/vnd.allegro.public.v1+json'],
                 []
             );
         }
@@ -1076,11 +1076,11 @@ class BadgeCampaignsApi
 
         if ($multipart) {
             $headers = $this->headerSelector->selectHeadersForMultipart(
-                ['application/vnd.allegro.beta.v1+json']
+                ['application/vnd.allegro.public.v1+json']
             );
         } else {
             $headers = $this->headerSelector->selectHeaders(
-                ['application/vnd.allegro.beta.v1+json'],
+                ['application/vnd.allegro.public.v1+json'],
                 []
             );
         }
@@ -1449,11 +1449,11 @@ class BadgeCampaignsApi
 
         if ($multipart) {
             $headers = $this->headerSelector->selectHeadersForMultipart(
-                ['application/vnd.allegro.beta.v1+json']
+                ['application/vnd.allegro.public.v1+json']
             );
         } else {
             $headers = $this->headerSelector->selectHeaders(
-                ['application/vnd.allegro.beta.v1+json'],
+                ['application/vnd.allegro.public.v1+json'],
                 []
             );
         }
@@ -1795,12 +1795,12 @@ class BadgeCampaignsApi
 
         if ($multipart) {
             $headers = $this->headerSelector->selectHeadersForMultipart(
-                ['application/vnd.allegro.beta.v1+json']
+                ['application/vnd.allegro.public.v1+json']
             );
         } else {
             $headers = $this->headerSelector->selectHeaders(
-                ['application/vnd.allegro.beta.v1+json'],
-                ['application/vnd.allegro.beta.v1+json']
+                ['application/vnd.allegro.public.v1+json'],
+                ['application/vnd.allegro.public.v1+json']
             );
         }
 
