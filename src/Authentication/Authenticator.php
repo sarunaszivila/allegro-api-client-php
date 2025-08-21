@@ -70,6 +70,29 @@ class Authenticator
         return json_decode($authorizationTokens, true);
     }
 
+    public function postNewTokensFromCurrentTokens($refreshToken)
+    {
+        $res = $this->client->request(
+            'POST',
+            $this->allegroUrl . '/auth/oauth/token'
+            [
+                'headers' => [
+                    'Authorization' => 'Basic ' . base64_encode($this->allegroClientId . ':' . $this->allegroClientSecret),
+                    'Content-Type'  => 'application/x-www-form-urlencoded',
+                ],
+                'form_params' => [
+                    'refresh_token' => $refreshToken,
+                    'redirect_uri' => urlencode($this->redirectUrl),
+                    'grant_type' => 'authorization_code',
+                ]
+            ]
+        );
+
+        $authorizationTokens = $res->getBody()->getContents();
+
+        return json_decode($authorizationTokens, true);
+    }
+
     public function authorizeDevice()
     {
         $res = $this->client->request('POST', $this->allegroUrl . '/auth/oauth/device', [
