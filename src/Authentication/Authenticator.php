@@ -74,7 +74,7 @@ class Authenticator
     {
         $res = $this->client->request(
             'POST',
-            $this->allegroUrl . '/auth/oauth/token'
+            $this->allegroUrl . '/auth/oauth/token',
             [
                 'headers' => [
                     'Authorization' => 'Basic ' . base64_encode($this->allegroClientId . ':' . $this->allegroClientSecret),
