@@ -83,7 +83,7 @@ class Authenticator
                 'form_params' => [
                     'refresh_token' => $refreshToken,
                     'redirect_uri' => urlencode($this->redirectUrl),
-                    'grant_type' => 'authorization_code',
+                    'grant_type' => 'client_credentials',
                 ]
             ]
         );
